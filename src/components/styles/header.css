@@ -1,0 +1,30 @@
+.app__header {
+    margin-bottom: 1.5em;
+    justify-content: center;
+    display: flex;
+
+    --max-header-height: 372px;
+    --logo-padding-top: calc((var(--max-header-height) / 15.5));
+}
+
+.app__headerImage {
+    width: 100%;
+    max-width: 1920px;
+    height: var(--max-header-height);
+    object-fit: cover;
+    position: relative;
+}
+.app__headerLogo {
+    position: absolute;
+    max-width: 480px;
+    max-height: 270px;
+    /* max-width: calc(var(--max-header-height) / 2.1);
+    max-height: calc((var(--max-header-height) / 2.1) * (5 / 16)); 
+    */
+    padding-top: var(--logo-padding-top);
+}
+
+/* @media (max-width: 1400px) {
+    .app__headerLogo {
+    }
+} */
